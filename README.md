@@ -5,6 +5,11 @@ with advanced features on file syncing, privacy protection and teamwork".
 
 This Dockerfile does not really package Seafile 4 for Docker, but provides an environment for running it including startup scripts, including all dependencies for both a SQLite or MySQL (requires external MySQL database, for example in another container) setup.
 
+There are two different flavors of this Docker image, added as tags. To checkout a specific flavor, use `jenserat/seafile:[tag]` as image name. By default, `latest` wil be used.
+
+  - **latest**: Environment for the Seafile Community Edition
+  - **pro**: With additional requirements for the professional version
+
 ## Setup
 
 The image only prepares the base system and provides some support during installation. [Read through the setup manual](https://github.com/haiwen/seafile/wiki/Download-and-setup-seafile-server) before setting up Seafile.
